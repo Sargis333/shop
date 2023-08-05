@@ -7,7 +7,7 @@ export default function Order(props) {
         <img src={"/img/" + props.item.img} alt={props.item.title} />
         <h2>{props.item.title}</h2>
         <b>{props.item.price}$</b>
-        <FaTrash className='delete-icon' onClick = {()=> (props.onDelete(props.item.id))}/>
+        <FaTrash className='delete-icon' onClick = {()=> props.onDelete(props.item.id)}/>
     </div>
   )
 }
